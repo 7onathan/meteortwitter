@@ -1,0 +1,29 @@
+<head>
+  <title>DooWop</title>
+</head>
+
+<body>
+  {{> tweetBox}}
+</body>
+
+<template name="tweetBox">
+	
+	<div class="tweetbox-container">
+		
+		<div class="panel panel-default tweetbox col-md-6">
+			
+			<div class= "panel-body">
+				<textarea class ="form-control" id ="tweetText" placeholder="What it is?" rows="3"></textarea>
+
+				<div class="pull-right btnGroup">
+					<strong class="{{charClass}}">
+						{{charCount}}
+					</strong>
+
+					<button class="btn btn-info pull-right" type="button" {{disableButton}}>Boing</button>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</template>
